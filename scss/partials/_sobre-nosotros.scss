@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap');
+
+// PALETA DE COLORES
+$color1 : #18111f;
+$color2 : #140d1a;
+$color3 : #42142a;
+$color4 : #ff2e5f;
+$color5 : #ffd452;
+$color6 : #fff;
+
+// FONT FAMILY
+$font1 : 'Barlow', sans-serif;
+$font2 : 'Bebas Neue', cursive;
+/* SOBRE NOSOTROS */
+
+.main-sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.parrafo-sobre-nosotros{
+    margin-top: 20px;
+    width: 90%;
+    text-align: justify;
+}
+
+/*  NOTAS SOBRE NOSOTROS */
+
+.h2-notas{
+    margin-top: 50px;
+    font-family: $font2;
+    color: $color5;
+    font-size: 30px;
+}
+.h3-notas{
+    margin: 20px auto;
+    width: 90%;
+    font-size: 15px;
+}
+.nota-1, .nota-2, .nota-3{
+    background-color: $color1;
+    border-radius: 20px;
+}
+.nota-1:hover, .nota-2:hover, .nota-3:hover{
+    background-color: #ffffff0d;
+}
+.img-nota{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.p-web-nota{
+    padding-bottom: 20px;
+}

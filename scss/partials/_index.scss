@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap');
+
+// PALETA DE COLORES
+$color1 : #18111f;
+$color2 : #140d1a;
+$color3 : #42142a;
+$color4 : #ff2e5f;
+$color5 : #ffd452;
+$color6 : #fff;
+
+// FONT FAMILY
+$font1 : 'Barlow', sans-serif;
+$font2 : 'Bebas Neue', cursive;
+
+// INDEX 
+
+// TITULO Y VIDEO 
+
+.main-index{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-index{
+    font-family: $font2;
+    font-size: 180px;
+    margin-top: 250px;
+    color: $color5;
+}
+
+.video-index{
+    margin: 50px auto;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    opacity: 80%;
+}
+
+//  ENTRENAMIENTOS
+.section-entrenamientos{
+    width: 95%;
+    margin: auto;
+}
+
+.h3-dia-horario, .h3-donde, .h3-que-llevar{
+    font-family: $font2;
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.h2-entrenamientos{
+    font-family: $font2;
+    font-size: 70px;
+    color: $color5;
+}
+
+.iframe-mapa{
+    width: 100%;
+}
+
+.info-dia-horario, .info-que-llevar, .iframe-mapa{
+    margin-top: 30px;
+    font-size: 20px;
+    height: 350px;
+    background-image: url('../assets/img/background.png');
+    background-size: 90%;
+    background-attachment: fixed;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.li-dia-horario, .p-dia-horario, .p-que-llevar{
+    margin: 0 auto;
+    width: 80%;
+} 
+
+
+// MOVILE
+
+@media screen and (max-width: 567px){
+
+    .titulo-index{
+        font-size: 50px;
+    }
+    .h2-entrenamientos{
+        width: auto;
+        font-size: 50px;
+    }
+}

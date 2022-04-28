@@ -1,0 +1,315 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  text-align: justify center; }
+
+body {
+  Background: linear-gradient(0deg, #18111f, #140d1a); }
+
+/* NAV */
+.nav-css {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #140d1a;
+  box-shadow: 0px 0px 24px 1px #140d1a;
+  z-index: 1000; }
+
+.pages, .perfil-registrarse {
+  padding: 12px;
+  color: #fff; }
+  .pages.perfil-registrarse:link, .pages.pages:link, .perfil-registrarse.perfil-registrarse:link, .perfil-registrarse.pages:link {
+    color: #fff; }
+  .pages.perfil-registrarse:hover, .pages.pages:visited, .perfil-registrarse.perfil-registrarse:hover, .perfil-registrarse.pages:visited {
+    color: #fff; }
+  .pages.perfil-registrarse:hover, .pages.pages:hover, .perfil-registrarse.perfil-registrarse:hover, .perfil-registrarse.pages:hover {
+    color: #ff2e5f; }
+  .pages.perfil-registrarse:active, .pages.pages:active, .perfil-registrarse.perfil-registrarse:active, .perfil-registrarse.pages:active {
+    color: #42142a; }
+
+.perfil-iniciar {
+  padding: 12px;
+  color: #fff;
+  background-color: #ff2e5f;
+  border-radius: 20px; }
+  .perfil-iniciar.perfil-iniciar:hover {
+    background-color: #ffd452;
+    color: #fff; }
+
+#color-amarillo:link {
+  color: #ffd452; }
+
+#color-amarillo:visited {
+  color: #ffd452; }
+
+#color-amarillo:hover {
+  color: #ff2e5f; }
+
+#color-amarillo:active {
+  color: #42142a; }
+
+.bg-button-dark {
+  background-color: #140d1a;
+  box-shadow: 0px 0px 24px 1px #140d1a; }
+
+.bg-button-yellow {
+  background-color: #ffd452;
+  box-shadow: 0px 0px 24px 1px #140d1a;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+/* TITULOS TODAS LAS PAGINAS */
+.titulo-contacto,
+.titulo-sobre-nosotros,
+.titulo-proximos-torneos,
+.titulo-reglamento {
+  font-family: "Bebas Neue", cursive;
+  font-size: 70px;
+  padding-top: 150px;
+  color: #ffd452;
+  text-align: center; }
+
+/* FOOTER PARA TODAS LAS PÁGINAS, */
+footer {
+  width: 90%;
+  margin: 100px auto 0px;
+  display: flex;
+  justify-content: space-between; }
+  footer .h4-redes-footer {
+    font-size: 25px;
+    padding: 5px; }
+  footer .ul-redes-footer {
+    padding: 0px; }
+  footer .a-redes {
+    text-decoration: none;
+    padding: 0px; }
+    footer .a-redes .img-redes {
+      width: 30px;
+      padding: 5px; }
+  footer .logo-footer {
+    width: 100px;
+    height: 100px;
+    padding: 5px; }
+
+@media screen and (max-width: 520px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .h4-redes-footer {
+    text-align: center; }
+  .ul-redes-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .a-redes {
+    text-align: center; } }
+
+.main-index {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.titulo-index {
+  font-family: "Bebas Neue", cursive;
+  font-size: 180px;
+  margin-top: 250px;
+  color: #ffd452; }
+
+.video-index {
+  margin: 50px auto;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  opacity: 80%; }
+
+.section-entrenamientos {
+  width: 95%;
+  margin: auto; }
+
+.h3-dia-horario, .h3-donde, .h3-que-llevar {
+  font-family: "Bebas Neue", cursive;
+  font-size: 45px;
+  margin-top: 30px; }
+
+.h2-entrenamientos {
+  font-family: "Bebas Neue", cursive;
+  font-size: 70px;
+  color: #ffd452; }
+
+.iframe-mapa {
+  width: 100%; }
+
+.info-dia-horario, .info-que-llevar, .iframe-mapa {
+  margin-top: 30px;
+  font-size: 20px;
+  height: 350px;
+  background-image: url("../assets/img/background.png");
+  background-size: 90%;
+  background-attachment: fixed;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.li-dia-horario, .p-dia-horario, .p-que-llevar {
+  margin: 0 auto;
+  width: 80%; }
+
+@media screen and (max-width: 567px) {
+  .titulo-index {
+    font-size: 50px; }
+  .h2-entrenamientos {
+    width: auto;
+    font-size: 50px; } }
+
+/* SOBRE NOSOTROS */
+.main-sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+.parrafo-sobre-nosotros {
+  margin-top: 20px;
+  width: 90%;
+  text-align: justify; }
+
+/*  NOTAS SOBRE NOSOTROS */
+.h2-notas {
+  margin-top: 50px;
+  font-family: "Bebas Neue", cursive;
+  color: #ffd452;
+  font-size: 30px; }
+
+.h3-notas {
+  margin: 20px auto;
+  width: 90%;
+  font-size: 15px; }
+
+.nota-1, .nota-2, .nota-3 {
+  background-color: #18111f;
+  border-radius: 20px; }
+
+.nota-1:hover, .nota-2:hover, .nota-3:hover {
+  background-color: #ffffff0d; }
+
+.img-nota {
+  width: 100%;
+  border-radius: 20px; }
+
+.p-web-nota {
+  padding-bottom: 20px; }
+
+main .section-infernal,
+main .section-entrevero {
+  width: 95%;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #42142a1a; }
+  main .section-infernal .h2-proximo-torneo-ent,
+  main .section-infernal .h2-proximo-torneo-inf,
+  main .section-entrevero .h2-proximo-torneo-ent,
+  main .section-entrevero .h2-proximo-torneo-inf {
+    margin: 50px;
+    font-family: "Bebas Neue", cursive;
+    color: #ff2e5f;
+    font-size: 50px; }
+  main .section-infernal .flyer-infernal,
+  main .section-infernal .flyer-entrevero,
+  main .section-entrevero .flyer-infernal,
+  main .section-entrevero .flyer-entrevero {
+    border-radius: 20px;
+    width: 100%; }
+  main .section-infernal .parrafo-infernal,
+  main .section-infernal .parrafo-entrevero,
+  main .section-entrevero .parrafo-infernal,
+  main .section-entrevero .parrafo-entrevero {
+    text-align: justify; }
+
+main .h3-proximos-torneos {
+  margin-top: 40px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px; }
+
+main .boton-participar {
+  color: #fff;
+  width: 140px;
+  border-radius: 20px; }
+  main .boton-participar.boton-participar:hover {
+    background-color: #ffd452;
+    color: #fff; }
+
+/* REGLAMENTO */
+/* SECCION REGLAMENTOS */
+.article-reglamento {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+.titulo-reglamento-idioma {
+  font-size: 50px;
+  color: #ff2e5f;
+  /* margin-top: 40px; */ }
+
+.parrafo-reglamento {
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 50px; }
+
+/* CONTACTO */
+.formulario-contacto-fieldset {
+  width: 60%;
+  margin: 40px auto 100px;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-template-areas: "label-nombre label-nombre" "nombre nombre" "label-email label-email" "email email" "label-telefono label-telefono" "telefono telefono" "label-mensaje label-mensaje" "mensaje mensaje" "none enviar";
+  gap: 10px; }
+  .formulario-contacto-fieldset .label-nombre {
+    grid-area: label-nombre; }
+  .formulario-contacto-fieldset #nombre {
+    grid-area: nombre; }
+  .formulario-contacto-fieldset .label-email {
+    grid-area: label-email; }
+  .formulario-contacto-fieldset #email {
+    grid-area: email; }
+  .formulario-contacto-fieldset .label-telefono {
+    grid-area: label-telefono; }
+  .formulario-contacto-fieldset #telefono {
+    grid-area: telefono; }
+  .formulario-contacto-fieldset .label-mensaje {
+    grid-area: label-mensaje; }
+  .formulario-contacto-fieldset label {
+    text-align: left;
+    padding-left: 10px; }
+  .formulario-contacto-fieldset #nombre, .formulario-contacto-fieldset #email, .formulario-contacto-fieldset #telefono, .formulario-contacto-fieldset #mensaje {
+    background-color: #42142a;
+    border-radius: 20px;
+    border: none;
+    height: 40px; }
+  .formulario-contacto-fieldset #mensaje {
+    grid-area: mensaje;
+    height: 150px; }
+  .formulario-contacto-fieldset #enviar {
+    grid-area: enviar;
+    background-color: #ff2e5f;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px; }

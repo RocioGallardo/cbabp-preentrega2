@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap');
+
+// PALETA DE COLORES
+$color1 : #18111f;
+$color2 : #140d1a;
+$color3 : #42142a;
+$color4 : #ff2e5f;
+$color5 : #ffd452;
+$color6 : #fff;
+
+// FONT FAMILY
+$font1 : 'Barlow', sans-serif;
+$font2 : 'Bebas Neue', cursive;
+/* REGLAMENTO */
+
+
+/* SECCION REGLAMENTOS */
+
+.article-reglamento{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.titulo-reglamento-idioma{
+    font-size: 50px;
+    color: #ff2e5f;
+    /* margin-top: 40px; */
+}
+.parrafo-reglamento{
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap');
+
+// PALETA DE COLORES
+$color1 : #18111f;
+$color2 : #140d1a;
+$color3 : #42142a;
+$color4 : #ff2e5f;
+$color5 : #ffd452;
+$color6 : #fff;
+
+// FONT FAMILY
+$font1 : 'Barlow', sans-serif;
+$font2 : 'Bebas Neue', cursive;
+
+// PROXIMOS TORNEOS 
+main{
+    .section-infernal, 
+    .section-entrevero{
+        width: 95%;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: #42142a1a;
+        .h2-proximo-torneo-ent, 
+        .h2-proximo-torneo-inf{
+            margin: 50px;
+            font-family: $font2;
+            color: $color4;
+            font-size: 50px;
+        }
+        .flyer-infernal, 
+        .flyer-entrevero{
+            border-radius: 20px;
+            width: 100%;
+        }
+        .parrafo-infernal, 
+        .parrafo-entrevero{
+            text-align: justify;
+        }
+    }
+    .h3-proximos-torneos{
+        margin-top: 40px;
+        font-family: $font2;
+        font-size: 50px;
+    }
+    .boton-participar{
+        color: $color6;
+        width: 140px;
+        border-radius: 20px;
+        &.boton-participar:hover{
+            background-color: $color5;
+            color: $color6;
+        }
+    }
+}
+
+
+
+
+
+
+

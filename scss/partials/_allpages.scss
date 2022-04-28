@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Bebas+Neue&display=swap');
+
+// PALETA DE COLORES
+$color1 : #18111f;
+$color2 : #140d1a;
+$color3 : #42142a;
+$color4 : #ff2e5f;
+$color5 : #ffd452;
+$color6 : #fff;
+
+// FONT FAMILY
+$font1 : 'Barlow', sans-serif;
+$font2 : 'Bebas Neue', cursive;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: $color6;
+    font-family: $font1;
+    text-decoration: none;
+    list-style: none;
+    text-align: justify center;
+}
+
+body{
+    Background: linear-gradient(0deg, $color1, $color2)
+}
+
+/* NAV */
+
+.nav-css{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: $color2;
+    box-shadow: 0px 0px 24px 1px $color2;
+    z-index: 1000;
+}
+.pages, .perfil-registrarse{
+    padding: 12px;
+    color: $color6;
+    &.perfil-registrarse:link, &.pages:link{color: $color6;}
+    &.perfil-registrarse:hover, &.pages:visited{color: $color6;}
+    &.perfil-registrarse:hover, &.pages:hover{color: $color4;}
+    &.perfil-registrarse:active, &.pages:active{color: $color3;}
+}
+.perfil-iniciar{
+    padding: 12px;
+    color: $color6;
+    background-color: $color4;
+    border-radius: 20px;
+    &.perfil-iniciar:hover{
+        background-color: $color5;
+        color: $color6;
+    }
+}
+#color-amarillo:link{color: $color5}
+#color-amarillo:visited{color: $color5}
+#color-amarillo:hover{color: $color4}
+#color-amarillo:active{color: $color3}
+
+// DROPDOWN 
+
+.bg-button-dark{
+    background-color: $color2;
+    box-shadow: 0px 0px 24px 1px $color2;
+}
+.bg-button-yellow{
+    background-color: $color5;
+    box-shadow: 0px 0px 24px 1px $color2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* TITULOS TODAS LAS PAGINAS */
+
+.titulo-contacto, 
+.titulo-sobre-nosotros, 
+.titulo-proximos-torneos, 
+.titulo-reglamento {
+    font-family: $font2;
+    font-size: 70px;
+    padding-top: 150px;
+    color: $color5;
+    text-align: center;
+}
+
+/* FOOTER PARA TODAS LAS PÁGINAS, */
+footer{
+    width: 90%;
+    margin: 100px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    .h4-redes-footer{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .ul-redes-footer{
+        padding: 0px;
+    }
+    .a-redes{
+        text-decoration: none;
+        padding: 0px;
+        .img-redes{
+            width: 30px;
+            padding: 5px;
+        }
+    }
+    .logo-footer{
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 520px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h4-redes-footer{
+        text-align: center;
+    }
+    .ul-redes-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-redes{
+        text-align: center;
+    }
+}
