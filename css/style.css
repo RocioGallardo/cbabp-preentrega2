@@ -127,8 +127,11 @@ footer {
     font-family: "Bebas Neue", cursive;
     font-size: 180px;
     text-align: center;
-    margin-top: 250px;
+    margin: 250px auto 0px;
     color: #ffd452; }
+    @media screen and (max-width: 542px) {
+      .main-index .titulo-index {
+        font-size: 80px; } }
   .main-index .video-index {
     margin: 50px auto;
     width: 100%;
@@ -143,6 +146,9 @@ footer {
     font-family: "Bebas Neue", cursive;
     font-size: 70px;
     color: #ffd452; }
+    @media screen and (max-width: 542px) {
+      .section-entrenamientos .h2-entrenamientos {
+        font-size: 50px; } }
   .section-entrenamientos .h3-dia-horario, .section-entrenamientos .h3-donde, .section-entrenamientos .h3-que-llevar {
     font-family: "Bebas Neue", cursive;
     font-size: 45px;
@@ -156,7 +162,7 @@ footer {
     font-size: 20px;
     height: 350px;
     background-image: url("../assets/img/background.png");
-    background-size: 90%;
+    background-size: cover;
     background-attachment: fixed;
     border-radius: 20px;
     display: flex;
@@ -173,13 +179,6 @@ footer {
     .section-entrenamientos .iframe-mapa .p-que-llevar {
       margin: 0 auto;
       width: 80%; }
-
-@media screen and (max-width: 567px) {
-  .titulo-index {
-    font-size: 50px; }
-  .h2-entrenamientos {
-    width: auto;
-    font-size: 50px; } }
 
 /* SOBRE NOSOTROS */
 .main-sobre-nosotros {

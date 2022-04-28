@@ -26,8 +26,11 @@ $font2 : 'Bebas Neue', cursive;
         font-family: $font2;
         font-size: 180px;
         text-align: center;
-        margin-top: 250px;
+        margin: 250px auto 0px;
         color: $color5;
+        @media screen and (max-width: 542px){
+            font-size: 80px;
+        }
     }
     .video-index{
         margin: 50px auto;
@@ -50,6 +53,9 @@ $font2 : 'Bebas Neue', cursive;
         font-family: $font2;
         font-size: 70px;
         color: $color5;
+        @media screen and (max-width: 542px){
+            font-size: 50px;
+        }
     }
     .h3-dia-horario, .h3-donde, .h3-que-llevar{
         font-family: $font2;
@@ -66,7 +72,7 @@ $font2 : 'Bebas Neue', cursive;
         font-size: 20px;
         height: 350px;
         background-image: url('../assets/img/background.png');
-        background-size: 90%;
+        background-size: cover;
         background-attachment: fixed;
         border-radius: 20px;
         display: flex;
@@ -81,15 +87,3 @@ $font2 : 'Bebas Neue', cursive;
     }
 }
 
-// MOBILE
-
-@media screen and (max-width: 567px){
-
-    .titulo-index{
-        font-size: 50px;
-    }
-    .h2-entrenamientos{
-        width: auto;
-        font-size: 50px;
-    }
-}
