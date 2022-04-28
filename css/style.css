@@ -100,7 +100,8 @@ footer {
   footer .logo-footer {
     width: 100px;
     height: 100px;
-    padding: 5px; }
+    padding: 5px;
+    margin: auto 0px; }
 
 @media screen and (max-width: 520px) {
   footer {
@@ -122,52 +123,56 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.titulo-index {
-  font-family: "Bebas Neue", cursive;
-  font-size: 180px;
-  margin-top: 250px;
-  color: #ffd452; }
-
-.video-index {
-  margin: 50px auto;
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  opacity: 80%; }
+  .main-index .titulo-index {
+    font-family: "Bebas Neue", cursive;
+    font-size: 180px;
+    text-align: center;
+    margin-top: 250px;
+    color: #ffd452; }
+  .main-index .video-index {
+    margin: 50px auto;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    opacity: 80%; }
 
 .section-entrenamientos {
   width: 95%;
   margin: auto; }
-
-.h3-dia-horario, .h3-donde, .h3-que-llevar {
-  font-family: "Bebas Neue", cursive;
-  font-size: 45px;
-  margin-top: 30px; }
-
-.h2-entrenamientos {
-  font-family: "Bebas Neue", cursive;
-  font-size: 70px;
-  color: #ffd452; }
-
-.iframe-mapa {
-  width: 100%; }
-
-.info-dia-horario, .info-que-llevar, .iframe-mapa {
-  margin-top: 30px;
-  font-size: 20px;
-  height: 350px;
-  background-image: url("../assets/img/background.png");
-  background-size: 90%;
-  background-attachment: fixed;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.li-dia-horario, .p-dia-horario, .p-que-llevar {
-  margin: 0 auto;
-  width: 80%; }
+  .section-entrenamientos .h2-entrenamientos {
+    font-family: "Bebas Neue", cursive;
+    font-size: 70px;
+    color: #ffd452; }
+  .section-entrenamientos .h3-dia-horario, .section-entrenamientos .h3-donde, .section-entrenamientos .h3-que-llevar {
+    font-family: "Bebas Neue", cursive;
+    font-size: 45px;
+    margin-top: 30px; }
+  .section-entrenamientos .iframe-mapa {
+    width: 100%; }
+  .section-entrenamientos .info-dia-horario,
+  .section-entrenamientos .info-que-llevar,
+  .section-entrenamientos .iframe-mapa {
+    margin-top: 30px;
+    font-size: 20px;
+    height: 350px;
+    background-image: url("../assets/img/background.png");
+    background-size: 90%;
+    background-attachment: fixed;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section-entrenamientos .info-dia-horario .li-dia-horario,
+    .section-entrenamientos .info-dia-horario .p-dia-horario,
+    .section-entrenamientos .info-dia-horario .p-que-llevar,
+    .section-entrenamientos .info-que-llevar .li-dia-horario,
+    .section-entrenamientos .info-que-llevar .p-dia-horario,
+    .section-entrenamientos .info-que-llevar .p-que-llevar,
+    .section-entrenamientos .iframe-mapa .li-dia-horario,
+    .section-entrenamientos .iframe-mapa .p-dia-horario,
+    .section-entrenamientos .iframe-mapa .p-que-llevar {
+      margin: 0 auto;
+      width: 80%; }
 
 @media screen and (max-width: 567px) {
   .titulo-index {
@@ -182,11 +187,10 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%; }
-
-.parrafo-sobre-nosotros {
-  margin-top: 20px;
-  width: 90%;
-  text-align: justify; }
+  .main-sobre-nosotros .parrafo-sobre-nosotros {
+    margin-top: 20px;
+    width: 90%;
+    text-align: justify; }
 
 /*  NOTAS SOBRE NOSOTROS */
 .h2-notas {
@@ -195,24 +199,34 @@ footer {
   color: #ffd452;
   font-size: 30px; }
 
-.h3-notas {
-  margin: 20px auto;
-  width: 90%;
-  font-size: 15px; }
-
-.nota-1, .nota-2, .nota-3 {
+.nota-1,
+.nota-2,
+.nota-3 {
   background-color: #18111f;
   border-radius: 20px; }
-
-.nota-1:hover, .nota-2:hover, .nota-3:hover {
-  background-color: #ffffff0d; }
-
-.img-nota {
-  width: 100%;
-  border-radius: 20px; }
-
-.p-web-nota {
-  padding-bottom: 20px; }
+  .nota-1 .h3-notas,
+  .nota-2 .h3-notas,
+  .nota-3 .h3-notas {
+    margin: 20px auto;
+    width: 90%;
+    font-size: 15px; }
+  .nota-1 .img-nota,
+  .nota-2 .img-nota,
+  .nota-3 .img-nota {
+    width: 100%;
+    border-radius: 20px; }
+  .nota-1 .p-web-nota,
+  .nota-2 .p-web-nota,
+  .nota-3 .p-web-nota {
+    padding-bottom: 20px; }
+  .nota-1.nota-1:hover, .nota-1.nota-2:hover, .nota-1.nota-3:hover,
+  .nota-2.nota-1:hover,
+  .nota-2.nota-2:hover,
+  .nota-2.nota-3:hover,
+  .nota-3.nota-1:hover,
+  .nota-3.nota-2:hover,
+  .nota-3.nota-3:hover {
+    background-color: #ffffff0d; }
 
 main .section-infernal,
 main .section-entrevero {
@@ -261,16 +275,13 @@ main .boton-participar {
   flex-direction: column;
   align-items: center;
   width: 100%; }
-
-.titulo-reglamento-idioma {
-  font-size: 50px;
-  color: #ff2e5f;
-  /* margin-top: 40px; */ }
-
-.parrafo-reglamento {
-  width: 90%;
-  text-align: justify;
-  margin-bottom: 50px; }
+  .article-reglamento .titulo-reglamento-idioma {
+    font-size: 50px;
+    color: #ff2e5f; }
+  .article-reglamento .parrafo-reglamento {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 50px; }
 
 /* CONTACTO */
 .formulario-contacto-fieldset {

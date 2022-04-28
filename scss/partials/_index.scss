@@ -22,65 +22,66 @@ $font2 : 'Bebas Neue', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
+    .titulo-index{
+        font-family: $font2;
+        font-size: 180px;
+        text-align: center;
+        margin-top: 250px;
+        color: $color5;
+    }
+    .video-index{
+        margin: 50px auto;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        opacity: 80%;
+    }
 }
 
-.titulo-index{
-    font-family: $font2;
-    font-size: 180px;
-    margin-top: 250px;
-    color: $color5;
-}
 
-.video-index{
-    margin: 50px auto;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    opacity: 80%;
-}
+
+
 
 //  ENTRENAMIENTOS
 .section-entrenamientos{
     width: 95%;
     margin: auto;
+    .h2-entrenamientos{
+        font-family: $font2;
+        font-size: 70px;
+        color: $color5;
+    }
+    .h3-dia-horario, .h3-donde, .h3-que-llevar{
+        font-family: $font2;
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .iframe-mapa{
+        width: 100%;
+    }
+    .info-dia-horario, 
+    .info-que-llevar, 
+    .iframe-mapa{
+        margin-top: 30px;
+        font-size: 20px;
+        height: 350px;
+        background-image: url('../assets/img/background.png');
+        background-size: 90%;
+        background-attachment: fixed;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .li-dia-horario, 
+        .p-dia-horario, 
+        .p-que-llevar{
+            margin: 0 auto;
+            width: 80%;
+        } 
+    }
 }
 
-.h3-dia-horario, .h3-donde, .h3-que-llevar{
-    font-family: $font2;
-    font-size: 45px;
-    margin-top: 30px;
-}
-
-.h2-entrenamientos{
-    font-family: $font2;
-    font-size: 70px;
-    color: $color5;
-}
-
-.iframe-mapa{
-    width: 100%;
-}
-
-.info-dia-horario, .info-que-llevar, .iframe-mapa{
-    margin-top: 30px;
-    font-size: 20px;
-    height: 350px;
-    background-image: url('../assets/img/background.png');
-    background-size: 90%;
-    background-attachment: fixed;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.li-dia-horario, .p-dia-horario, .p-que-llevar{
-    margin: 0 auto;
-    width: 80%;
-} 
-
-
-// MOVILE
+// MOBILE
 
 @media screen and (max-width: 567px){
 
